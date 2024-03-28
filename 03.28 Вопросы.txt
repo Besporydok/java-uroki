@@ -1,0 +1,27 @@
+1.
+++++++++++++++++++++++++ ТЕОРИЯ ++++++++++++++++++++++++
+Длина строки (количество символов).
+
+str.length();      // возвращает длину строки str (количество символов, включая пробелы)
+
+String word = "Java is strong";
+int x = word.length();
+System.out.println(x); // 14
+++++++++++++++++++++++++ ТЕОРИЯ ++++++++++++++++++++++++
+
+import java.util.Scanner;
+class MyProgram {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+       String a = sc.nextLine();
+       sc.close();
+       int x = a.length()-1;
+       char b0 = a.charAt(0);
+       char b11 = a.charAt(x);
+       System.out.print(b0+" "+b11);
+   }
+}
+
+==================Вопрос================
+Почему заработало только когда написал "-1" в 18 строе "int x = a.length()-1;", ведь судя по теории считает он не с нуля?
+==================Вопрос================
